@@ -1,8 +1,7 @@
-# Text to Binary
-# Binary to Text conversion 
+# Text to Binary and Binary to Text conversion 
 ## MATLAB Code
 
-## Important to note this that this is a function file not script, you need to pass parameters to execute this program.
+### Important to note this that this is a function file not script, you need to pass parameters to execute this program.
 
 #### Step 1.  Save "text2bin.m" and "bin2text.m" files in your current directory of MATLAB
 
