@@ -5,15 +5,15 @@
 
 #### Step 1.  Save "text2bin.m" and "bin2text.m" files in your current directory of MATLAB
 
-#### To convert text to binary ===
+##### *To convert text to binary ===*
 
-#### Step 2. define parameter text, e.g. `text = 'Hello World'`
+#### Step 2. Define parameter text, e.g. `text = 'Hello World'`
 
-#### Step 3. then write  `[binV, binS] = text2bin(text);`
+#### Step 3. Then write  `[binV, binS] = text2bin(text);`
 
-#### To convert Binary to text back ===
+##### *To convert Binary to text back ===*
 
-#### Step 4. write  `text2 = bin2text(binV);`   or  `text3 = bin2text(binS);`
+#### Step 4. Write  `text2 = bin2text(binV);`   or  `text3 = bin2text(binS);`
       
 ### Explaination
 ##### Above functions convert text into binary and binary to text
