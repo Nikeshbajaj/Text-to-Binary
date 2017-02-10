@@ -28,20 +28,22 @@ text = 'Hello World';
 text2 = bin2text(binV);
 text3 =  bin2text(binS);
 ```
-#####------Now Check
+#####Now Check
 ```
-text
-binV
-binS
-text2
-text3
+>>text
+>>binV
+>>binS
+>>text2
+>>text3
 ```
-##### You can directly write as 
+#####You can directly write as 
+
 ```
-[binV, binS] = text2bin('Hello World')
+[binV, binS] = text2bin('Hello World');
+
 ```
 
-####===========================================
+#### ===========================================
 ###### If any doubt, confusion or feedback please contact
 ###### Nikesh Bajaj    http://nikeshbajaj.in
 ###### bajaj.nikkey@gmail.com
