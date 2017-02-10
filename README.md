@@ -30,11 +30,7 @@ text3 =  bin2text(binS);
 ```
 #####Now Check
 ```
->>text
->>binV
->>binS
->>text2
->>text3
+text, binV, binS, text2, text3, text3;
 ```
 #####You can directly write as 
 
