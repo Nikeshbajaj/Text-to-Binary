@@ -7,13 +7,27 @@
 
 ##### *To convert text to binary ===*
 
-#### Step 2. Define parameter text, e.g. `text = 'Hello World'`
+#### Step 2. Define variable text, e.g. 
 
-#### Step 3. Then write  `[binV, binS] = text2bin(text);`
+```
+text = 'Hello World';
+```
+
+#### Step 3. Then write  
+
+```
+[binV, binS] = text2bin(text);
+```
 
 ##### *To convert Binary to text back ===*
 
-#### Step 4. Write  `text2 = bin2text(binV);`   or  `text3 = bin2text(binS);`
+#### Step 4. Write  
+
+```
+text2 = bin2text(binV);   
+or  
+text3 = bin2text(binS);
+```
       
 ### Explaination
 ##### Above functions convert text into binary and binary to text
@@ -31,17 +45,13 @@ text3 =  bin2text(binS);
 #####Now Check
 
 ```
-
 text, binV, binS, text2, text3, text3;
-
 ```
 
 #####You can directly write as 
 
 ```
-
 [binV, binS] = text2bin('Hello World');
-
 ```
 
 #### ===========================================
