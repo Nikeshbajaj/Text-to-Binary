@@ -1,8 +1,6 @@
 function [binV, binS] = text2bin(text)
-%% Explaination
-% This function convert text into binary and return two variable
-% One in vector -binV other in string binS
-
+%% TEXT2BIN Convert character vector or string (text) to integer vector of {0,1}s or string of {'0','1'}s.
+% 
 % Input: 
 %    text - Class char/string e.g text = 'Hello World'
 % Output:
@@ -10,7 +8,7 @@ function [binV, binS] = text2bin(text)
 %    binS - Binary Strin  of class char/string
 
 %% Example - 
-% Run following commands ofter saving file in
+% Run these commands ofter saving this file in
 % your current directory
 
 %------ Copy and past each line in command window-----
@@ -36,8 +34,12 @@ function [binV, binS] = text2bin(text)
 %  bajaj.nikkey@gmail.com
 %  University of Genova and Queen Mary University of London
 %% Code
+if isstring(text)
+    text = char(strjoin(text));
+end
+
 binS = dec2bin(text,8);
 binS = binS';
 binS = binS(:)';
-binV = binS-48;
+binV = uint8(binS-48);
 end

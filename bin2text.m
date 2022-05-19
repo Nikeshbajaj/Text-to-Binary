@@ -1,7 +1,6 @@
 function text = bin2text(binVS)
-%% Explaination
-% This function convert binary vector or string (binV or binS) got from
-% [binV, binS] = text2bin(text); to back in text
+% BIN2TEXT Convert binary vector of {0,1} or string of {'0','1'}s to character vector
+% text = text2bin('10000011000010')
 
 % Input: 
 %    binVS - Pass any output of [binV, binS] = text2bin(text)
@@ -10,7 +9,7 @@ function text = bin2text(binVS)
 %    text - text of class char/string
 
 %% Example - 
-% Run following commands ofter saving file in
+% Run these commands ofter saving this file in
 % your current directory
 
 %----- Copy and past each line in command window-----
@@ -29,10 +28,16 @@ function text = bin2text(binVS)
 %  bajaj.nikkey@gmail.com
 %  University of Genova and Queen Mary University of London
 %% Code
-btxt  = reshape(bin,[8, length(binVS)/8])';
+if isstring(binVS)
+    binVS = char(binVS);
+end
 
-if length(class(btxt))== 6
+btxt  = reshape(binVS,[8, length(binVS)/8])';
+
+if isnumeric(binVS)
     text  = char(bin2dec(char(btxt+48)))';
-else
+elseif ischar(binVS)
     text  = char(bin2dec(btxt))';
+else
+    error("Unhandled data type: %s", class(binVS));
 end
